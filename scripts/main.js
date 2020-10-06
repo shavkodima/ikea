@@ -1,4 +1,4 @@
-//day 2
+//day 2 -no
 'use strict';
 const btnBurger = document.querySelector('.btn-burger');
 const catalog = document.querySelector('.catalog');
