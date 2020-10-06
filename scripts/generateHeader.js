@@ -1,6 +1,4 @@
-'use strict';
-
-const generateHeader = () =>{
+export const generateHeader = () =>{
     const header =`
     <header>
     <div class="container">
@@ -16,7 +14,7 @@ const generateHeader = () =>{
                 <img src="image/ikea-logo.svg" alt="Логотип">
             </a>
             <form class="search" method="get" action="goods.html">
-                <input type="search" name="s" maxlength="150" class="search-input" spellcheck="false"
+                <input type="search" name="search" maxlength="150" class="search-input" spellcheck="false"
                        aria-label="Искать товары, новинки и вдохновение"
                        aria-placeholder="Искать товары, новинки и вдохновение" placeholder="Что вы ищете?"
                        autocapitalize="off" autocomplete="off" autocorrect="off">
@@ -43,5 +41,3 @@ const generateHeader = () =>{
 
     document.body.insertAdjacentHTML('afterbegin', header);
 }
-
-generateHeader();
