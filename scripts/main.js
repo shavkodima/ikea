@@ -18,10 +18,13 @@ const closeMenu = () =>{
     overlay.classList.remove('active')
     closeSubMenu();
 };
+
+// Делегирование клика от каталога на элементы li
 const opeSubMenu = (event) =>{
     event.preventDefault();
     const target = event.target;
     const itemList = target.closest('.catalog-list__item');
+    console.log(itemList)
     if(itemList){
         subCatalogHeader.innerHTML = itemList.innerHTML; 
         subCatalog.classList.add('subopen');
