@@ -1,4 +1,4 @@
-//day 2 -no
+//day 1 - yes
 'use strict';
 const btnBurger = document.querySelector('.btn-burger');
 const catalog = document.querySelector('.catalog');
@@ -18,6 +18,8 @@ const closeMenu = () =>{
     overlay.classList.remove('active')
     closeSubMenu();
 };
+//делегирование клика от catalog на itemList
+//itemList = target.closest('.catalog-list__item'); - ищет совпадение поднимаясь вверх по Dom дереву
 const opeSubMenu = (event) =>{
     event.preventDefault();
     const target = event.target;
