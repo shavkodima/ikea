@@ -1,6 +1,4 @@
-'use strict';
-
-const generateFooter = () =>{
+ const generateFooter = () =>{
     const footer = `
     <footer>
     <div class="container">
@@ -45,4 +43,4 @@ const generateFooter = () =>{
     document.body.insertAdjacentHTML('beforeend', footer);
 };
 
-generateFooter();
+export default generateFooter;
